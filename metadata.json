@@ -1,0 +1,6 @@
+{
+  "name": "Dental Clove",
+  "description": "Premium modern dental clinic in Sector 12, Noida, Delhi NCR, established in 2016. Specializing in general dentistry, root canals, braces, clear aligners, dental implants, teeth whitening, and paediatric dental care.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

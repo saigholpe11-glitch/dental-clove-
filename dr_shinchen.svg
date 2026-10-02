@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="50%" stop-color="#f0f9ff" />
+      <stop offset="100%" stop-color="#dcfce7" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffdfba" />
+      <stop offset="100%" stop-color="#f3c299" />
+    </linearGradient>
+    <linearGradient id="coatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <linearGradient id="scrubGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0891b2" />
+      <stop offset="100%" stop-color="#0e7490" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="480" fill="url(#bgGrad)" />
+
+  <!-- Soft Clinic Grid/Decorative Accent -->
+  <circle cx="200" cy="180" r="150" fill="#ffffff" opacity="0.6" />
+  <circle cx="340" cy="90" r="45" fill="#38bdf8" opacity="0.1" />
+  <circle cx="60" cy="380" r="70" fill="#10b981" opacity="0.08" />
+
+  <!-- Dental Cross Accent Motif in Background -->
+  <g opacity="0.15" transform="translate(320, 40)">
+    <rect x="8" y="0" width="8" height="24" rx="3" fill="#0891b2" />
+    <rect x="0" y="8" width="24" height="8" rx="3" fill="#0891b2" />
+  </g>
+
+  <!-- Doctor Silhouette & Body -->
+  <g filter="url(#softShadow)">
+    <!-- Shoulders & Doctor Coat -->
+    <path d="M70 480 C 75 360, 110 320, 160 305 L 180 340 L 220 340 L 240 305 C 290 320, 325 360, 330 480 Z" fill="url(#coatGrad)" stroke="#cbd5e1" stroke-width="1.5" />
+    
+    <!-- Medical Scrub V-Neck inside Coat -->
+    <path d="M165 306 L 200 375 L 235 306 Z" fill="url(#scrubGrad)" />
+    <!-- Undershirt line -->
+    <path d="M185 345 L 200 375 L 215 345 Z" fill="#ffffff" opacity="0.9" />
+
+    <!-- Lab Coat Lapels -->
+    <path d="M158 305 L 182 390 L 140 480 L 70 480 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    <path d="M242 305 L 218 390 L 260 480 L 330 480 Z" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+
+    <!-- Stethoscope Around Neck -->
+    <path d="M162 290 C 160 350, 175 400, 195 405" fill="none" stroke="#334155" stroke-width="5" stroke-linecap="round" />
+    <path d="M238 290 C 240 350, 225 395, 205 405" fill="none" stroke="#334155" stroke-width="5" stroke-linecap="round" />
+    <!-- Chest piece / Bell -->
+    <circle cx="195" cy="412" r="9" fill="#0891b2" stroke="#475569" stroke-width="2" />
+    <circle cx="195" cy="412" r="4" fill="#ffffff" />
+
+    <!-- Doctor ID Badge -->
+    <rect x="250" y="370" width="46" height="62" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" filter="url(#softShadow)" />
+    <rect x="264" y="364" width="18" height="6" rx="2" fill="#94a3b8" />
+    <rect x="256" y="378" width="34" height="24" rx="2" fill="#e0f2fe" />
+    <!-- Small avatar icon on badge -->
+    <circle cx="273" cy="387" r="5" fill="#0284c7" />
+    <path d="M265 399 C 265 394, 281 394, 281 399 Z" fill="#0284c7" />
+    <!-- Badge text lines -->
+    <line x1="256" y1="410" x2="288" y2="410" stroke="#0891b2" stroke-width="2" stroke-linecap="round" />
+    <line x1="256" y1="417" x2="280" y2="417" stroke="#64748b" stroke-width="2" stroke-linecap="round" />
+    <line x1="256" y1="423" x2="274" y2="423" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Neck -->
+    <path d="M178 245 L 178 305 C 188 312, 212 312, 222 305 L 222 245 Z" fill="url(#skinGrad)" />
+    <path d="M178 270 C 190 282, 210 282, 222 270 Z" fill="#e2aa7d" opacity="0.4" />
+
+    <!-- Head & Ears -->
+    <ellipse cx="148" cy="208" rx="9" ry="16" fill="url(#skinGrad)" />
+    <ellipse cx="252" cy="208" rx="9" ry="16" fill="url(#skinGrad)" />
+
+    <!-- Face Oval -->
+    <path d="M152 185 C 152 135, 248 135, 248 185 C 248 240, 226 268, 200 268 C 174 268, 152 240, 152 185 Z" fill="url(#skinGrad)" />
+
+    <!-- Hair -->
+    <path d="M148 178 C 144 140, 160 115, 200 115 C 242 115, 258 138, 252 178 C 245 150, 235 142, 200 142 C 168 142, 155 155, 148 178 Z" fill="url(#hairGrad)" />
+    <!-- Styled side hair -->
+    <path d="M150 170 C 154 188, 152 205, 150 215 C 147 210, 147 185, 150 170 Z" fill="url(#hairGrad)" />
+    <path d="M250 170 C 246 188, 248 205, 250 215 C 253 210, 253 185, 250 170 Z" fill="url(#hairGrad)" />
+
+    <!-- Eyebrows -->
+    <path d="M168 180 Q 180 175 188 180" fill="none" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M212 180 Q 220 175 232 180" fill="none" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Eyes (Warm, Smiling) -->
+    <ellipse cx="178" cy="192" rx="4.5" ry="4" fill="#0f172a" />
+    <ellipse cx="222" cy="192" rx="4.5" ry="4" fill="#0f172a" />
+    <circle cx="179.5" cy="190.5" r="1.5" fill="#ffffff" />
+    <circle cx="223.5" cy="190.5" r="1.5" fill="#ffffff" />
+
+    <!-- Nose -->
+    <path d="M197 190 Q 200 210 203 212 Q 196 215 194 212" fill="none" stroke="#cf8b57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Warm Confident Doctor Smile -->
+    <path d="M182 228 Q 200 244 218 228" fill="none" stroke="#991b1b" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M184 229 Q 200 240 216 229 Q 200 247 184 229 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5" />
+
+    <!-- Subtle blush for friendly look -->
+    <ellipse cx="166" cy="214" rx="7" ry="4" fill="#f43f5e" opacity="0.12" />
+    <ellipse cx="234" cy="214" rx="7" ry="4" fill="#f43f5e" opacity="0.12" />
+  </g>
+
+  <!-- Name Ribbon / Badge at the bottom -->
+  <g transform="translate(100, 432)">
+    <rect x="0" y="0" width="200" height="34" rx="17" fill="#0891b2" filter="url(#softShadow)" />
+    <text x="100" y="21" font-family="'DM Sans', -apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">DR. SHINCHEN</text>
+  </g>
+</svg>
